@@ -1,0 +1,115 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3671485604" file="C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App\129XeMRI_Calibration.prj" location="C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App" name="129XeMRI_Calibration" target="target.mlapps" target-name="Package App">
+    <param.appname>129XeMRI_Calibration</param.appname>
+    <param.authnamewatermark>Peter Niedbalski</param.authnamewatermark>
+    <param.email>pniedbalski@kumc.edu</param.email>
+    <param.company />
+    <param.icon>${PROJECT_ROOT}\129XeMRI_Calibration_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\129XeMRI_Calibration_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\129XeMRI_Calibration_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\129XeMRI_Calibration_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\pniedbalski\AppData\Local\Temp\tp2909ee01_11f4_4173_b80d_ecfbe3bf9239.png</param.screenshot>
+    <param.version>1.1</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App</param.output>
+    <param.guid>95dc4a9e-f663-41d6-b3a8-c4436e8f925d</param.guid>
+    <unset>
+      <param.company />
+      <param.summary />
+      <param.description />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Xenon_RealTime_Calibration_2.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_Fit.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_Fit_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_Mix.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_Mix_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_TimeFit.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\+Spectroscopy\NMR_TimeFit_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_Fit.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_Fit_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_Mix.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_Mix_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_TimeFit.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Duke_Cal\NMR_TimeFit_v.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Generic_Data_Format_Tools\+DataImport\mapVBVD.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Generic_Data_Format_Tools\+DataImport\read_twix_hdr.m</file>
+      <file>C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\MATLAB\Generic_Data_Format_Tools\+DataImport\twix_map_obj.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub" name="Calibration_App" optional="false">C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2023b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

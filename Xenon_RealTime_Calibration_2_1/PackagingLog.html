@@ -1,0 +1,62 @@
+<html>  
+<head>
+    <style>     
+        html{     
+        background-color: white;     
+        padding: 5px;     
+        width: 95%;     
+        }     
+        pre {     
+        overflow-x: auto;     
+        white-space: pre-wrap;     
+        white-space: -moz-pre-wrap;     
+        white-space: -pre-wrap;     
+        white-space: -o-pre-wrap;     
+        word-wrap: break-word;     
+        }     
+    </style>     
+    
+    <script type="text/javascript">     
+            
+            function setup(htmlComponent) {     
+            
+				htmlComponent.addEventListener("DataChanged", function(event) {     
+				scrollID =  htmlComponent.Data;     
+					if (scrollID != ''){
+						if(scrollID==="bottom"){         
+							scrollToBottom();     
+						} else if(scrollID==="DOWNLOAD_MCRINSTALLER" || scrollID==="BUILD_MISSING" || scrollID==="SAMPLE_GEN" || scrollID==="USER_REQUESTED_PACKAGE"){     
+							document.getElementById(scrollID).scrollIntoView(true);     
+						} else {     
+							//document.body.innerHTML = document.body.innerHTML + scrollID;     
+							document.body.appendChild(scrollID);                 
+							scrollToBottom();     
+						}    
+						htmlComponent.Data = '';
+					}		
+				});          
+            }     
+            function scrollToBottom(){     
+            var scrollingElement = (document.scrollingElement || document.body);     
+            scrollingElement.scrollTop = scrollingElement.scrollHeight;     
+            }     
+            
+    </script> 
+</head>
+ <body><meta charset="UTF-8">        
+ <pre><font color=blue>mcc -W 'webapp:Xenon_RealTime_Calibration_2_1,CONFIG:C:\Users\pniedbalski\AppData\Local\Temp\tp158a583d_7d98_4d15_833a_c164f906e6d8.xml' -d 'C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App\Xenon_RealTime_Calibration_2_1' -v -Z autodetect -C 'C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App\Xenon_RealTime_Calibration_2.mlapp'</font>
+Compiler version: 8.6 (R2023a)
+Analyzing file dependencies. 
+<font color='orange'>Warning: Web apps that generate additional windows or apps are currently not supported. Check the following
+.mlapp files for window and app dependencies:
+C:\Users\pniedbalski\OneDrive - University of Kansas Medical
+Center\Documents\GitHub\Calibration_App\Calibration_App\Xenon_RealTime_Calibration_2.mlapp</font> 
+Parsing file "C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App\Xenon_RealTime_Calibration_2.mlapp"
+	(referenced from command line).
+
+<font color='red'>The entry '6' in the file:
+
+C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Calibration_App\Calibration_App\Xenon_RealTime_Calibration_2_1\requiredMCRProducts.txt
+
+is invalid.</font>
+</pre></body></html>
